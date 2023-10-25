@@ -5,10 +5,6 @@ import Pokemon from '../Pokemon/Pokemon';
 
 export default function PokemonList() {
    
-  //  use effect expect-callback adn depedency array 
-  //  it execute with render first time
-  // dependency array-aray kisi ma change hota hai to depedency arraay ko dubara rerender karo
-  // axios-alternative of fetch api
 
     const [PokemonList,setPokemonList]=useState([]);
    
@@ -55,10 +51,16 @@ export default function PokemonList() {
     ,[]);
     return (
     <div className='pokemon-list-wrapper'>
-   <div>list of pokemons</div>   
-      {(isLoading)?'Loading....':
+   <div className='pokemon-wrapper'>
+     {(isLoading)?'Loading....':
       PokemonList.map((p)=> <Pokemon name={p.name} image={p.image} key={p.id}/>)
       }
+      </div> 
+      <div className='controls'>
+        <button>prev</button>
+        <button>next</button>
+      </div>
+     
     </div>
   )
 }
