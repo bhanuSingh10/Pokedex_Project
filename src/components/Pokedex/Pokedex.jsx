@@ -1,13 +1,12 @@
-import React from 'react'
-import Search from '../Search/Search';
-import './Pokedex.css'
-import PokemonList from '../PokemonList/PokemonList';
+import React from "react";
+import "./Pokedex.css";
+import Search from "../Search/Search";
+import PokemonList from "../PokemonList/PokemonList";
 export default function Pokedex() {
   return (
     <div className="pokedex-wrapper">
-    <h1  id='pokedex-heading'>Pokedex</h1>
-      <Search/>
-      <PokemonList/>
+      <Search />
+      <PokemonList />
     </div>
-  )
+  );
 }

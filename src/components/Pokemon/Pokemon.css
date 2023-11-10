@@ -6,8 +6,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* border: 2px solid black; */
+    padding: 2rem;
+    background: linear-gradient(rgba(223, 126, 126, 0.619),rgba(194, 90, 42, 0.573));
+    /* background-color:rgba(98, 179, 211, 0.361) ; */
+    border-radius: 10px;
+    box-shadow: 15px 15px rgb(108, 108, 108);
+    margin: 2rem;
+    width: 300px;
+    /* border: none; */
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    height: 300px;
   
 
+}
+.pokemon:hover{
+  background-color: rgba(82, 55, 55, 0.667);
 }
 .pokemon-image{
     height: 200px;
@@ -17,8 +32,10 @@ margin-top: 1rem;
 .pokemon-name{
 font-size: 25px;
 font-family: monospace;
+text-decoration: none;
+font-style: none;
 }
 
-.pokemon:hover{
-    background-color: rgb(223, 145, 145);
-}
+
+
+
